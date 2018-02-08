@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-image: radial-gradient(50% 185%, #F4F5F8 54%, #CCCDD2 100%);
+	font-family: 'AllianzWeb';
+}
+#app {
+	margin-top: 150px;
+}
+#main {
+	/* padding-top: 65px; */
+	width: 100%;
+	max-width: 730px;
+	margin: 0 auto;
+}
+.containerAZ {
+		width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+	padding: 0 30px;
+}
+.containerForm, .containerFilled {
+		width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+}
+.breadcrumbs {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 65px 70px 0 70px;
+}
+.breadcrumbs ul li {
+	color: #414141;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: 'AllianzWebLight';
+	display: inline;
+}
+.breadcrumbs ul li.active {
+	font-family: 'AllianzWebBold';
+}
+.breadcrumbs ul li:not(.active)::after {
+    background-image: url(../img/arrow.png);
+    background-size: 4px 7px;
+	background-repeat: no-repeat;
+	margin: 0 5px;
+    display: inline-block;
+    width: 4px; 
+    height: 7px;
+    content:"";
+}
+.breadcrumbs ul li.hidden {
+    display: none !important;
+}
+.mainHeading {
+	color: #414141;
+	font-family: 'AllianzWebLight';
+	font-size: 54px;
+	line-height: 59px;
+	text-align: center;
+	margin: 25px 0;
+}
+.mainHeading span{
+	color: #5A3982;
+	font-family: 'AllianzWebBold';
+}
+.containerAZ img{
+	width: 400px;
+	margin: 0 auto;
+}
+.containerAZ p{
+	color: #414141;
+	font-family: 'AllianzWeb';
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	margin-top: 30px;
+}
+.subHead{
+	color: #414141;
+	font-family: 'AllianzWeb';
+	font-size: 26px;
+	line-height: 35px;
+	text-align: left;
+	margin: 30px 0;
+}
+.subHead2 {
+font-family: 'AllianzWeb';
+font-size: 18px;
+color: #414141;
+letter-spacing: 0;
+line-height: 26px;
+}
+.circle {
+	    text-align: left;
+	list-style-position: outside;
+    list-style-type: disc;
+	margin-left: 15px;
+	font-size: 18px;
+	font-family: 'AllianzWeb';
+	color: #414141;
+	margin-bottom: 40px;
+}
+.circle li:not(:last-of-type) {
+	line-height: 26px;
+	padding-bottom: 20px;
+}
+.circle li a span:after {
+	background-image: url(../img/arrow-link.png);
+    background-size: 15px 10px;
+	background-repeat: no-repeat;
+	content: "";
+}
+.line {
+	padding-top: 20px;
+}
+.line li {
+	padding-left: 40px;
+}
+.line li:before {
+    content: "";
+    padding-right: 40px;
+    width: 40px;
+    margin-left: -40px;
+    background-position: center;
+    height: 2px;
+    background-size: 40px 2px;
+    background-repeat: no-repeat;
+    background-image: url(../img/bullet-line.png);
+}
+li span {
+	font-family: 'AllianzWeb';
+}
+button, .button {
+	width: 293px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007AB3 !important;
+	color: #ffffff;
+	font-family: 'AllianzWeb';
+	font-size: 16px;
+	
+}
+.note {
+	font-size: 16px !important;
+	margin-bottom: 30px;
+}
+.hidden {
+	display: none !;
+}
+.inputHeading {
+	font-family: 'AllianzWeb';
+	font-size: 12px;
+    color: #414141;
+	    width: 100%;
+}
+
+.w100.cijeli input{
+	width: 100% !important;
+    border-bottom: 1px solid #414141 !important;
+    text-align: left !important;
+    border: 0;
+    background: transparent !important;
+	border-radius: 0;
+	font-size: 20px !important;
+	line-height: 28px !important;
+	font-family: 'AllianzWeb' !important;
+	    color: #414141 !important;
+}
+.w50 {
+display: flex;
+    width: 48%;
+    flex-wrap: wrap;
+}
+.width50 {
+	display:flex;
+	width: 50%;
+}
+.w50 input {
+	width: 100%;
+}
+.flex100 {
+	    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.flex100 .w100 {
+	    width: 100%;
+    display: flex;
+	    justify-content: space-between;
+}
+.flex100 .formRow {
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+select {
+	    flex-direction: row;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    display: flex;
+	    border: none;
+	    background: transparent;
+	    border-radius: 0;
+	    /* width: 100%; */
+	    padding-left: 10px;
+	    color: #B2B2B2;
+	    font-size: 14px;
+	    /* padding: 6.5px 0 6.5px 20px; */
+}
+select:focus {
+	outline: none;
+}
+.dropdownMenu {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: center;
+	height: 27px;
+}
+.dropdownMenu::before {
+	    /* top: 11px; */
+	    background-size: 13px 9px;
+	    width: 13px;
+	    display: inline-flex;
+	    flex-direction: row;
+	    height: 9px;
+	    margin-left: 5px;
+	    align-items: center;
+	    position: relative;
+	    background-repeat: no-repeat;
+	    content:"";
+	    background-image: url('../img/arrow-down.png');
+}
+input:not([type=checkbox]):not([type=radio]){
+    text-align: left !important;
+    border: 0;
+    background: transparent !important;
+    border-radius: 0 !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-family: 'AllianzWeb' !important;
+    color: #414141 !important;
+    padding: 0px !important;
+}
+.formRow {
+	height: 55px;
+	margin-bottom: 20px;
+}
+#upis {
+	    margin-bottom: 20px;
+}
+.halfRow {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 100%;
+}
+input[type="radio"] {
+	    justify-content: center;
+	    display: flex;
+	    margin: 0 !important;
+	    align-items: center;
+	    position: relative;
+	    width: 16px;
+	    height: 16px;
+	    border-radius: 50%;
+	    -webkit-appearance: none;
+	    background: transparent !important;
+	    border: #007AB3 solid thin !important;
+}
+input[type="radio"]:checked {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #007AB3;
+	content: '';
+	display: inline-block;
+	position: relative;
+	visibility: visible;
+}
+input[type="radio"]:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #007AB3;
+     content: ''; 
+    position: absolute;
+    align-items: center;
+    top: 2px;
+    left: 2px;
+    display: inline-block;
+    visibility: visible;
+}
+.grey {
+	flex-direction: row;
+	align-items: center;
+	height: 220px;
+	border-radius: 8px;
+	background-color: #D8D8D8;
+	border: 1px solid #979797;
+}
+.rowContainer {
+	width: 100%;
+}
+.grey .rowContainer p {
+	color: r;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'AllianzWeb';
+}
+.grey .rowContainer span {
+	color: #414141;
+	font-size: 12px;
+	text-align: center;
+	 font-family: 'AllianzWeb';
+}
+.plus{
+    width: 42px;
+    height: 67px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    display: block;
+    margin: auto;
+}
+.paddBottom {
+	padding-bottom: 40px;
+}
+.napomenaHeading {
+		font-size: 16px;
+	line-height: 24px;
+	font-family: 'AllianzWebBold';
+}
+.napomenaOL {
+	font-size: 12px;
+	line-height: 20px;
+	font-family: 'AllianzWeb';
+	color: #414141;
+	list-style-type: upper-alpha;
+}
+.napomena {
+	font-size: 12px;
+	line-height: 20px;
+	font-family: 'AllianzWeb';
+	color: #414141;
+	padding: 40px 0;
+}
+.napomena a{
+	font-size: 12px;
+	line-height: 20px;
+	font-family: 'AllianzWeb';
+
+}
+.napomenaMarketing {
+	font-size: 12px;
+	text-align: center; 
+	line-height: 20px;
+	font-family: 'AllianzWeb';
+	color: #414141;
+	padding: 10px 0;
+}
+.radioHolder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+.alignCenter {
+	justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.radioHolder p {
+ font-family: 'AllianzWeb';
+ font-size: 15px;
+ color: #414141;
+ letter-spacing: 0;
+ line-height: 28px;
+}
+.pb5 {
+    padding-bottom: 2px;
+}
+.pl15 {
+    
+ padding-left: 15px;
+}
+.ml45 {
+    margin-left: 45px;
+}
+.pr15 {
+    
+ padding-right: 15px;
+}
+.mr25 {
+    margin-right: 25px;
+}
+.m30 {
+	margin: 30px 0;
+}
+.borderBot {
+    border-bottom: 1px solid #414141 !important;
+}
+.fontGrey {
+    color: #414141;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 100;
+     font-family: 'AllianzWeb';
+}
+.grey {
+    cursor: pointer;
+}
+.grey .rowContainer .red {
+    color: red;
+}
+.grey .rowContainer .red span {
+    color: red;
+}
+.mtb50 {
+    margin: 50px 0;
+}
+.datum {
+    	position: relative;
+    	display: flex;
+    	/* padding: 0; */
+    	width: 100%;
+    	flex-direction: row;
+    	align-items: center;
+    	height: 28px;
+    	line-height: 1;
+}
+.datum input {
+      line-height: 1;
+}
+.datumInput {
+  
+        	color: #B2B2B2;
+    	font-size: 14px;
+}
+.datum::before {
+    	    background-size: 19px 20px;
+    	    width: 25px;
+    	    display: inline-flex;
+    	    flex-direction: row;
+    	    height: 20px;
+    	    margin-right: 15px;
+    	    margin-left: 5px;
+    	    align-items: center;
+    	    position: relative;
+    	    background-repeat: no-repeat;
+    	    content:"";
+    	    background-image: url('../img/kalendar.png');
+}
+.testLogo {
+	width:20%;
+}
+.moreLink {
+	color: #2c7fe4;
+	font-size: 16px;
+	cursor: pointer;
+}
+ol {
+	font-family: 'AllianzWeb';
+}
+@media only screen and (max-width: 727px) {
+    .breadcrumbs {
+        display: none;
+    }
+    #main {
+            padding: 50px 20px 0 20px;
+    }
+    .w50 {
+        width: 100%;
+    }
+    .cijeli .formRow {
+        height: 55px !important; 
+    }
+    .inputHeading {
+        padding-bottom: 11px !important; 
+    }
+    .h110 .formRow {
+     height: 150px;
+    margin-bottom: 0;
+    
+    }
+    .flex100 .w100 {
+        display: block;
+    }
+    .mb20 {
+        margin-bottom: 20px !important;
+    }
+        .h55 {
+        height: 55px !important;
+    }
+    .h75 {
+        height: 75px !important;
+    }
+    .napomena {
+        padding: 15px 0 30px 0;
+    }
+    .ml45 {
+        margin-left: 0;
+    }
+
+}
